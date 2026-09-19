@@ -4,15 +4,42 @@ body {
 }
 
 
+* {
+    box-sizing: border-box;
+}
+
 :root {
-    --cor-principal: #029eff;
+    --cor-fundo-inicio: #061d2b;
+    --cor-fundo-fim: #08707a;
     
 }
 
-.corfundoHeader {
- background-color: var(--cor-principal);
- width: 100%;
+section h1 {
+    margin-top: 5px;
 }
+
+section {
+    background-color: white;
+    border-radius: 24px 24px 0 0;
+    margin-top: -20px;
+    padding: 24px;
+}
+
+
+.corfundoHeader {
+        background: linear-gradient(
+        to bottom,
+        var(--cor-fundo-inicio),
+        var(--cor-fundo-fim)
+    );
+
+    height: 110px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 .rodape {
     display: grid;
@@ -34,6 +61,3 @@ body {
     height: 32px;
     object-fit: contain;
 }
-/* .logo-national {
-    width: px !important;
-} */
