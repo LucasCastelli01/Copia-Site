@@ -1,4 +1,9 @@
 
+body {
+    margin: 0;
+}
+
+
 :root {
     --cor-principal: #029eff;
     
