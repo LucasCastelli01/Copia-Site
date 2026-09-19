@@ -26,3 +26,8 @@ body {
         grid-template-columns: repeat(4, 1fr);
     }
 } 
+
+.logos img {
+    filter: grayscale(100%);
+    opacity: 0.55;
+}
