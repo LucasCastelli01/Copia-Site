@@ -1,10 +1,25 @@
 
 body {
     margin: 0;
+    font-family: Arial, sans-serif;
 }
 
 
 * {
+    box-sizing: border-box;
+}
+
+
+.meu-botao {
+    background-color: #000;
+    color: #fff;
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+
+    width: 100%;
     box-sizing: border-box;
 }
 
@@ -26,6 +41,7 @@ section {
 }
 
 
+
 .corfundoHeader {
         background: linear-gradient(
         to bottom,
@@ -33,8 +49,7 @@ section {
         var(--cor-fundo-fim)
     );
 
-    height: 110px;
-
+    height: 150px;
     display: flex;
     justify-content: center;
     align-items: center;
