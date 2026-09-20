@@ -3,6 +3,14 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
     font-size: 15px;
+    min-height: 100vh;
+    background: radial-gradient(
+        circle at bottom left,
+        #066a78 0%,
+        #04303f 45%,
+        #04121e 100%
+    );
+    background-attachment: fixed;
 }
 
 
@@ -56,7 +64,6 @@ section p {
 :root {
     --cor-fundo-inicio: #061d2b;
     --cor-fundo-fim: #08707a;
-    
 }
 
 section h1 {
@@ -76,12 +83,6 @@ section {
 
 
 .corfundoHeader {
-        background: linear-gradient(
-        to bottom,
-        var(--cor-fundo-inicio),
-        var(--cor-fundo-fim)
-    );
-
     height: 130px;
     display: flex;
     justify-content: center;
@@ -100,7 +101,45 @@ section {
     .rodape {
         grid-template-columns: repeat(4, 1fr);
     }
-} 
+
+   
+    .corfundoHeader {
+        height: 124px;
+        align-items: flex-start;
+        padding-top: 20px;
+    }
+
+    
+    section {
+        max-width: 580px;
+        margin: -24px auto 0;
+        border-radius: 24px;
+        padding: 48px 72px;
+    }
+
+    .logo-national {
+        flex-basis: auto;
+    }
+
+    .logos {
+        margin-bottom: 0;
+        flex-wrap: nowrap;
+    }
+
+    
+    footer {
+        margin-top: 120px;
+        padding: 24px 40px;
+    }
+
+    .rodape {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 16px 36px;
+    }
+}
+
 
 
 .logos {
@@ -113,8 +152,8 @@ section {
 }
 
 .logos img {
-    width: 45px;
-    height: 30px;
+    width: 40px;
+    height: 26px;
     object-fit: contain;
     filter: grayscale(100%);
     opacity: 0.55;
@@ -148,13 +187,22 @@ section {
     line-height: 1.6;
     color: #63666a;
     margin-top: 0;
+    letter-spacing: -0.2px;
+}
+
+.link-mais {
+    display: block;
 }
 
 .rodape a {
     color: #30343b;
     text-decoration: none;
+    font-family: system-ui, sans-serif;
     font-size: 14px;
     font-weight: 400;
+    line-height: 1.5;
+    justify-self: start;
+
 }
 
 .rodape {
@@ -169,11 +217,11 @@ section {
 }
 
 
-footer p {
-    font-size: 14px;
-    line-height: 1.6;
+footer {
+    padding: 8px 24px 24px;
+    font-family: system-ui, sans-serif;
     color: #63666a;
-    margin-top: 24px;
+    background-color: white;
 }
 
 footer {
@@ -184,4 +232,14 @@ footer {
 
 footer p:last-child {
     margin-top: 32px;
+}
+
+.logo-national {
+    flex-basis: 100%;
+}
+
+.logo-national img {
+    width: 40px;
+    height: 26px;
+    object-fit: contain;
 }
