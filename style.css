@@ -89,6 +89,11 @@ section {
     align-items: center;
 }
 
+.corfundoHeader img {
+    width: 110px;
+    height: auto;
+    display: block;
+}
 
 .rodape {
     display: grid;
@@ -205,8 +210,12 @@ footer p:last-child {
 
     .corfundoHeader {
         height: 140px;
-        align-items: flex-start;
-        padding-top: 30px;
+        align-items: center;
+        padding-top: 0;
+    }
+    
+    .corfundoHeader img {
+        width: 150px;
     }
 
     section {
