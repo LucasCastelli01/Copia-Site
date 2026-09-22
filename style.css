@@ -1,3 +1,8 @@
+:root {
+    --cor-fundo-inicio: #066a78;
+    --cor-fundo-meio: #04303f;
+    --cor-fundo-fim: #04121e;
+}
 
 body {
     margin: 0;
@@ -6,11 +11,23 @@ body {
     min-height: 100vh;
     background: radial-gradient(
         circle at bottom left,
-        #066a78 0%,
-        #04303f 45%,
-        #04121e 100%
+        var(--cor-fundo-inicio) 0%,
+        var(--cor-fundo-meio) 45%,
+        var(--cor-fundo-fim) 100%
     );
     background-attachment: fixed;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
 }
 
 
@@ -61,10 +78,11 @@ section p {
     font-weight: 700;
 }
 
-:root {
-    --cor-fundo-inicio: #061d2b;
-    --cor-fundo-fim: #08707a;
+.meu-botao:hover {
+    background-color: #333;
 }
+
+
 
 section h1 {
     font-size: 22px;
@@ -205,6 +223,17 @@ footer p:last-child {
     height: 26px;
     object-fit: contain;
 }
+
+
+.creditos-clone {
+    margin-top: 24px;
+    padding-top: 16px;
+    border-top: 1px solid #e1e4e8;
+    font-size: 12px;
+    color: #63666a;
+    font-style: italic;
+}
+
 
 @media (min-width: 768px) {
 
